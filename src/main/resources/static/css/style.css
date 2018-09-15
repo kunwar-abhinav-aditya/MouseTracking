@@ -1,0 +1,289 @@
+html {
+  height:100%; }
+
+body {
+  height:100%
+  color: #ffffff; }
+
+.herofull {
+    width:100%;
+    height:100%;
+    z-index:10000;
+}
+
+a {
+    color: #333333;
+    font-weight: bold;
+    transition: all 0.2s; }
+
+.navbar {
+  width: 100%;}
+  @media (max-width: 34em) {
+    .navbar {
+      background: black !important; } }
+  .navbar .navbar-toggler {
+    cursor: pointer;
+    outline: 0; }
+  .navbar .nav-link {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .navbar .nav-item {
+    padding: 0 1rem; }
+    @media (max-width: 34em) {
+      .navbar .nav-item {
+        padding: 0; } }
+    @media (max-width: 34em) {
+      .navbar .nav-item .nav-link {
+        font-weight: normal;
+        color: #fff !important; } }
+
+.logo-asknow {
+    width: 80%;
+    height:100%;
+    margin-right: 30px;
+    margin-bottom: 10px;
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.5em;
+  font-color: #ffffff; }
+
+h6 {
+  font-weight: bold;
+  font-size: 1.0em;
+  font-color: #3d3d3d; }
+
+.abig {
+  font-weight: normal;
+  color: #373D3F; }
+
+.heads {
+  font-weight: bold;
+  font-size: 22px;
+  color: #354B82; }
+
+#timer {
+  font-weight: bold;
+  font-size: 2.0em;
+  color: #354B82; }
+
+#timerInfo {
+  font-weight: normal;
+  color: #f48342; }
+
+.hero-img {
+  width: 50%; }
+
+.feature-wrapper {
+  background: #343a40;
+  color: white;
+  overflow:auto; }
+
+.h4 {
+  text-align: justify; }
+
+.p {
+   font-color: #3d3d3d }
+
+.fa-github {
+  color: #ffffff;
+  font-size: 3em; }
+
+.star {
+  color: #ffffff;
+  font-size: 3em; }
+
+.starrow {
+  color: #ffffff;}
+
+.row {
+  text-align: justify; }
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    resize: none;
+}
+
+legend {
+    font-size: 12px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+input {
+    margin: .4rem;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.checkbox-inline {
+    padding: 3px 6px;
+}
+
+.box {
+    padding: 0 5px 0 5px;
+}
+.box .inner {
+    background-color: #fff;
+}
+
+.rcorner {
+    border-radius: 10px;
+}
+
+.searchbutton {
+    border-radius: 10px;
+}
+
+
+label {
+    font-size: 14px;
+}
+
+.a1 label {
+    font-weight: bold;
+}
+
+.a1 label::after {
+    content: "1";
+    vertical-align: super;
+    font-size: smaller;
+    font-weight: normal;
+}
+
+.a2 label {
+    font-weight: bold;
+}
+
+.a2 label::after {
+    content: "2";
+    vertical-align: super;
+    font-size: smaller;
+    font-weight: normal;
+}
+
+.a3 label {
+    font-weight: bold;
+}
+.a3 label::after {
+    content: "3";
+    vertical-align: super;
+    font-size: smaller;
+    font-weight: normal;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerimages {
+  height:100%;
+  width:100%;
+}
+
+button.link {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.blurdiv {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    /* bug fix - no overlay */
+    display: none;
+}
+
+.custom-file-input { cursor: copy; }
+
+.name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.0em;
+}
+
+.namenotexists {
+    color: #354B82;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.noinfo {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.0em;
+}
+
+.leadText {
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.abstractText {
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.0em;
+}
