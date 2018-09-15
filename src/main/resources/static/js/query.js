@@ -100,7 +100,7 @@
         var payload = { "queryRequestString" : question, "components" : components, "requiresQueryBuilding" : requiresQueryBuilding, "tasks" : selectedTasks};
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:10010/query',
+            url: 'http://qanary.sda.tech/query',
             dataType: 'json',
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(payload),
@@ -142,7 +142,7 @@
         var payload = { "rating" : rating, "components" : components, "question" : question};
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:10010/query/feedback',
+            url: 'http://qanary.sda.tech/query/feedback',
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(payload),
             success: function(queryResponse) {
