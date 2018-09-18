@@ -101,6 +101,7 @@
         $.ajax({
             type: 'POST',
             url: 'http://qanary.sda.tech/query',
+            //url: 'http://localhost:10010/query',
             dataType: 'json',
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(payload),
@@ -109,6 +110,9 @@
                     if (i >= 2){
                         resourceURLs.push(queryResponse['queryResponseStrings'][i]);
                     }
+                }
+                if (resourceURLs.length == 0) {
+                    resourceURLs.push(queryResponse['queryResponseStrings'][0]);
                 }
                 enable();
 
@@ -143,6 +147,7 @@
         $.ajax({
             type: 'POST',
             url: 'http://qanary.sda.tech/query/feedback',
+            //url: 'http://localhost:10010/query/feedback',
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(payload),
             success: function(queryResponse) {
@@ -178,7 +183,8 @@
         var payload = resourceURLs;
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:10010/query/resource',
+            //url: 'http://localhost:10010/query/resource',
+            url: 'http://qanary.sda.tech/query/resource',
             dataType: 'json',
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(payload),
